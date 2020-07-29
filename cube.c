@@ -7,10 +7,10 @@ void main()
 {   
     long long int num;
     int n1=0,n2=0;
-	printf("Enter a number: \n");  
-	scanf("%lld",&num);
-	while(num!=0)
-	  {
+    printf("Enter a number: \n");  
+    scanf("%lld",&num);
+    while(num!=0)
+     {
         n1=num%10;
         if((n1%2)==0)     //checking whether the number is even or not 
           {
@@ -18,5 +18,5 @@ void main()
           }
         num/=10;
       }
-	printf("Sum is: %d",n2);
+     printf("Sum is: %d",n2);
 }
