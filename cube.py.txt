@@ -1,0 +1,9 @@
+#Write a program to print the sum of cubes of even digits in a given number.
+
+num=str(input())
+sum=0                                   #initialising sum of cubes of even digits to zero.
+l=list(inp)                             #list, l consists of all the digits of the given number and -ve sign if the number is negative.
+for i in l:
+    if i != "-" and int(i)%2==0:        #Checking whether the digit is even or not
+        sum=sum+pow(int(i),3)
+print("Sum of cubes of even digits in {0} is {1}".format(num,sum))
